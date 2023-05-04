@@ -14,7 +14,7 @@ const SuggestionWords = ({ isFocused, searchKeywords, changeKeyword }: Suggestio
 
   const fetchSearchData = useCallback(async (searchKeywords: string) => {
     if (searchKeywords) {
-        // 캐싱 utils 구현 필요
+      
       const cachedData = checkCacheExpired(searchKeywords);
       if (cachedData) {
         return setSearchData(cachedData);
